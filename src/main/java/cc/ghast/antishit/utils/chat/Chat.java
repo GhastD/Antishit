@@ -6,9 +6,7 @@ import org.bukkit.ChatColor;
 
 public class Chat {
     public static String translate(String message){
-        String msg = message;
-        if (msg.contains("%prefix%")) return ChatColor.translateAlternateColorCodes('&', msg.replace("%prefix%", ConfigManager.getSettings().getString("general.prefix")));
-        return ChatColor.translateAlternateColorCodes('&', msg);
+        return ChatColor.translateAlternateColorCodes('&', message);
     }
     public static void sendConsoleMessage(String message){
         Bukkit.getConsoleSender().sendMessage(Chat.translate(message));

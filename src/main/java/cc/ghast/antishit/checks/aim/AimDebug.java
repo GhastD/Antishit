@@ -28,6 +28,8 @@ public class AimDebug extends Check {
         if (data.isDebugAim()){
             data.getPlayer().sendMessage(Chat.translate("&6Yaw change -> &e" + yawChange + "&6 pitch change -> &e" + pitchChange + "&6 gcd -> &e" + gcd));
         }
+        if (data.getYawChangePrevious().size() > 150) data.getYawChangePrevious().clear();
+        if (data.getPitchChangePrevious().size() > 150) data.getPitchChangePrevious().clear();
 
     }
 }

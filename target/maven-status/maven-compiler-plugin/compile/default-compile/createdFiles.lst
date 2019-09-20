@@ -43,3 +43,4 @@ cc\ghast\antishit\data\PlayerData.class
 cc\ghast\antishit\utils\chat\StringUtil.class
 cc\ghast\antishit\metrics\Metrics$SingleLineChart.class
 cc\ghast\antishit\checks\aim\AimDebug.class
+cc\ghast\antishit\checks\aim\DripAim.class

@@ -23,13 +23,28 @@ public class ShitCommand implements CommandExecutor {
         if (!player.hasPermission("shit.debug")) return returnNoPerm(player);
         PlayerData data = Antishit.getInstance().getApi().getPlayerDataManager().getData(player);
         switch (args.length){
+            case 1: {
+                switch (args[0].toLowerCase()){
+                    case "alerts": {
+                        data.staff.setVerboseAlertable(true);
+                        data.staff.setVLAlertable(true);
+                        player.sendMessage(Chat.translate( data.staff.isVerboseAlertable() ? "&7[&c!&7] &6Set alerts on!" : "&7[&c!&7] &6Set alerts off!"));
+                        return true;
+                    }
+
+                    default: {
+                        return returnInfo(player);
+                    }
+                }
+            }
             case 2: {
                 switch (args[0].toLowerCase()){
                     case "debug": {
                         switch (args[1].toLowerCase()){
                             case "aim": {
                                 data.setDebugAim(!data.isDebugAim());
-                                player.sendMessage(Chat.translate(data.isDebugAim() ? "&7[&c!&7] &6Set debug aim on!" : "&7[&c!&7] &6Set debug aim off!"));
+                                String message = data.isDebugAim() ? "&7[&c!&7] &6Set debug aim on!" : "&7[&c!&7] &6Set debug aim off!";
+                                player.sendMessage(Chat.translate(message));
                                 return true;
                             }
                             default: {

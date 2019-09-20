@@ -29,6 +29,10 @@
             <id>CodeMC</id>
             <url>https://repo.codemc.org/repository/maven-public</url>
         </repository>
+        <repository>
+            <id>Tensorflow</id>
+            <url>https://mvnrepository.com/artifact/org.tensorflow/tensorflow</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -46,6 +50,12 @@
             <scope>provided</scope>
         </dependency>
         -->
+        <!-- https://mvnrepository.com/artifact/org.tensorflow/tensorflow -->
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>tensorflow</artifactId>
+            <version>1.14.0</version>
+        </dependency>
         <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>

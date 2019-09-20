@@ -6,6 +6,7 @@ import cc.ghast.antishit.api.packet.events.PacketUseEntity;
 import cc.ghast.antishit.data.PlayerData;
 import cc.ghast.antishit.managers.ConfigManager;
 import cc.ghast.antishit.utils.chat.Chat;
+import cc.ghast.antishit.utils.location.Position;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.Bukkit;
@@ -26,9 +27,12 @@ public abstract class Check {
         Location from = event.getFrom();
         float yawChange = Math.abs(to.getYaw() - from.getYaw());
         float pitchChange = Math.abs(to.getPitch() - from.getPitch());
+        handleRotation(data, yawChange, pitchChange, to, from);
         handleRotation(data, yawChange, pitchChange);
     }
     public void handleRotation(PlayerData data, float yawChange, float pitchChange){
+    }
+    public void handleRotation(PlayerData data, float yawChange, float pitchChange, Location pos, Location pre){
     }
 
     public void handle(PlayerData data, PacketUseEntity packetUseEntity) {
