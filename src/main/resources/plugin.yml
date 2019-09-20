@@ -1,0 +1,8 @@
+main: cc.ghast.antishit.Antishit
+author: Ghast
+description: 'A little practice debugger'
+name: Antishit
+version: 1.0-DEV
+commands:
+  shit:
+    description: 'fuck cheating'
