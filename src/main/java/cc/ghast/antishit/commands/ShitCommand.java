@@ -84,7 +84,7 @@ public class ShitCommand implements CommandExecutor {
                                 }
                                 return true;
                             }
-                            case "yawdig": {
+                            case "yawdif": {
                                 List<Float> list = data.getYawChangePrevious();
                                 String[] payload = new String[list.size()];
                                 for (int i = 0; i < list.size(); i++){
@@ -102,7 +102,28 @@ public class ShitCommand implements CommandExecutor {
                             }
                         }
                     }
-
+                    case "clear": {
+                        switch (args[1].toLowerCase()){
+                            case "gcd": {
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPreviousGCDS().size() + " GCD logs"));
+                                data.getPreviousGCDS().clear();
+                                return true;
+                            }
+                            case "pitchdif": {
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPitchChangePrevious().size() + " Pitch Difference logs"));
+                                data.getPitchChangePrevious().clear();
+                                return true;
+                            }
+                            case "yawdif": {
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Difference logs"));
+                                data.getYawChangePrevious().clear();
+                                return true;
+                            }
+                            default: {
+                                return returnInfo(player);
+                            }
+                        }
+                    }
                     default: {
                         return returnInfo(player);
                     }

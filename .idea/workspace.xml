@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="369226d1-ff4d-4948-bb36-5fea3c564af4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Antishit-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+            <state relative-caret-position="471">
+              <caret line="107" column="89" selection-start-line="107" selection-start-column="78" selection-end-line="107" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -800,8 +801,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        <state relative-caret-position="471">
+          <caret line="107" column="89" selection-start-line="107" selection-start-column="78" selection-end-line="107" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
