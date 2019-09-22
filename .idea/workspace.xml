@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="369226d1-ff4d-4948-bb36-5fea3c564af4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/tensorflow-1.14.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/HTTPRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/Hastebin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/Check.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CheckManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CheckManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/chat/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/chat/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Antishit-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,30 +20,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CheckManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/PlayerDataManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="102">
               <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="306">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="323">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,11 +63,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="408">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/Hastebin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/HTTPRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2706">
+              <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
             </state>
           </provider>
         </entry>
@@ -119,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+            <state relative-caret-position="578">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,11 +139,13 @@
       <find>Antishit</find>
       <find>&amp;a</find>
       <find>meme</find>
+      <find>HttpRequest</find>
     </findStrings>
     <replaceStrings>
       <replace>antishit</replace>
       <replace>&amp;6</replace>
       <replace>shit</replace>
+      <replace>HTTPRequest</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -193,8 +187,11 @@
         <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/Check.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/HttpRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/HTTPRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/Hastebin.java" />
       </list>
     </option>
   </component>
@@ -227,8 +224,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="22" />
+    <option name="x" value="83" />
     <option name="width" value="1934" />
     <option name="height" value="1034" />
   </component>
@@ -238,6 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,14 +393,32 @@
               <item name="Antishit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="antishit" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="hastebin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="antishit" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,9 +469,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="22" width="1934" height="1034" extended-state="0" />
+    <frame x="83" y="0" width="1934" height="1034" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -479,19 +496,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.32977587" />
+      <window_info active="true" anchor="right" id="Maven" order="5" visible="true" weight="0.101387404" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/categories/AimCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/categories/AimCheck.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/CheckType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -499,43 +510,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/d.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Position.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Chat.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/CraftServer188R01.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/NPC188R01.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/CustomLocation.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/nms.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/GUI.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/RayTrace.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Timer.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/d.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Position.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Chat.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/CraftServer188R01.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/NPC188R01.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/CustomLocation.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/StringUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/nms.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/GUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/RayTrace.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Timer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketBlockDig.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -593,13 +578,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aura/AuraDebug.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -732,12 +711,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/settings.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/ConfigManager.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="969">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CheckManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -747,7 +730,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/PlayerDataManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="102">
           <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -755,9 +738,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CheckManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/ConfigManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="306">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -765,9 +748,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/settings.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="323">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -789,27 +775,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$USER_HOME$/Downloads/Optifine SRC Version [1.8.8 HD U H8]/optifine/RenderEnv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-        </state>
+        <state relative-caret-position="-1915" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="578">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+        <state relative-caret-position="408">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/HTTPRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2706">
+          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/Hastebin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
