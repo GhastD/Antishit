@@ -60,7 +60,7 @@ public class ShitCommand implements CommandExecutor {
                         switch (args[1].toLowerCase()){
                             case "gcd": {
                                 List<Long> list = data.getPreviousGCDS();
-                                String[] payload = new String[list.size() - 1];
+                                String[] payload = new String[list.size()];
                                 for (int i = 0; i < list.size(); i++){
                                     payload[i] = list.get(i).toString();
                                 }
