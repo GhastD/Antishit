@@ -1,8 +1,8 @@
 package cc.ghast.antishit.utils.hastebin;
 
+import cc.ghast.antishit.utils.http.HTTPRequest;
 import com.google.gson.JsonParser;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.URL;
 

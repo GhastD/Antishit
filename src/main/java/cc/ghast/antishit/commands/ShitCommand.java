@@ -5,6 +5,7 @@ import cc.ghast.antishit.api.checks.Check;
 import cc.ghast.antishit.data.PlayerData;
 import cc.ghast.antishit.managers.ConfigManager;
 import cc.ghast.antishit.utils.chat.Chat;
+import cc.ghast.antishit.utils.hastebin.Hastebin;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -45,6 +46,40 @@ public class ShitCommand implements CommandExecutor {
                                 data.setDebugAim(!data.isDebugAim());
                                 String message = data.isDebugAim() ? "&7[&c!&7] &6Set debug aim on!" : "&7[&c!&7] &6Set debug aim off!";
                                 player.sendMessage(Chat.translate(message));
+                                return true;
+                            }
+                            default: {
+                                return returnInfo(player);
+                            }
+                        }
+                    }
+                    case "paste": {
+                        switch (args[1].toLowerCase()){
+                            case "gcd": {
+                                String[] payload = (String[]) data.getPreviousGCDS().toArray();
+                                try {
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
+                                } catch (Exception e){
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
+                                }
+                                return true;
+                            }
+                            case "pitchdif": {
+                                String[] payload = (String[]) data.getPitchChangePrevious().toArray();
+                                try {
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
+                                } catch (Exception e){
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
+                                }
+                                return true;
+                            }
+                            case "yawdig": {
+                                String[] payload = (String[]) data.getYawChangePrevious().toArray();
+                                try {
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
+                                } catch (Exception e){
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
+                                }
                                 return true;
                             }
                             default: {

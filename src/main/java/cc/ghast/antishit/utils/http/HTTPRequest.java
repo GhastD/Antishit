@@ -1,4 +1,4 @@
-package cc.ghast.antishit.utils.hastebin;
+package cc.ghast.antishit.utils.http;
 
 import lombok.Setter;
 
