@@ -12,6 +12,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerAchievementAwardedEvent;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShitCommand implements CommandExecutor {
     public ShitCommand(){
         Antishit.getInstance().getCommand("shit").setExecutor(this);
@@ -56,7 +59,11 @@ public class ShitCommand implements CommandExecutor {
                     case "paste": {
                         switch (args[1].toLowerCase()){
                             case "gcd": {
-                                String[] payload = (String[]) data.getPreviousGCDS().toArray();
+                                List<Long> list = data.getPreviousGCDS();
+                                String[] payload = new String[list.size() - 1];
+                                for (int i = 0; i < list.size(); i++){
+                                    payload[i] = list.get(i).toString();
+                                }
                                 try {
                                     player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
                                 } catch (Exception e){
@@ -65,7 +72,11 @@ public class ShitCommand implements CommandExecutor {
                                 return true;
                             }
                             case "pitchdif": {
-                                String[] payload = (String[]) data.getPitchChangePrevious().toArray();
+                                List<Float> list = data.getPitchChangePrevious();
+                                String[] payload = new String[list.size() - 1];
+                                for (int i = 0; i < list.size(); i++){
+                                    payload[i] = list.get(i).toString();
+                                }
                                 try {
                                     player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
                                 } catch (Exception e){
@@ -74,7 +85,11 @@ public class ShitCommand implements CommandExecutor {
                                 return true;
                             }
                             case "yawdig": {
-                                String[] payload = (String[]) data.getYawChangePrevious().toArray();
+                                List<Float> list = data.getYawChangePrevious();
+                                String[] payload = new String[list.size() - 1];
+                                for (int i = 0; i < list.size(); i++){
+                                    payload[i] = list.get(i).toString();
+                                }
                                 try {
                                     player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
                                 } catch (Exception e){
