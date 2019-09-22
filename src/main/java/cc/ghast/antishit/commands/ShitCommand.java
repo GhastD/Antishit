@@ -73,7 +73,7 @@ public class ShitCommand implements CommandExecutor {
                             }
                             case "pitchdif": {
                                 List<Float> list = data.getPitchChangePrevious();
-                                String[] payload = new String[list.size() - 1];
+                                String[] payload = new String[list.size()];
                                 for (int i = 0; i < list.size(); i++){
                                     payload[i] = list.get(i).toString();
                                 }
@@ -86,7 +86,7 @@ public class ShitCommand implements CommandExecutor {
                             }
                             case "yawdig": {
                                 List<Float> list = data.getYawChangePrevious();
-                                String[] payload = new String[list.size() - 1];
+                                String[] payload = new String[list.size()];
                                 for (int i = 0; i < list.size(); i++){
                                     payload[i] = list.get(i).toString();
                                 }
