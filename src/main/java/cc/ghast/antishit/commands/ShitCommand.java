@@ -32,7 +32,7 @@ public class ShitCommand implements CommandExecutor {
                     case "alerts": {
                         data.staff.setVerboseAlertable(true);
                         data.staff.setVLAlertable(true);
-                        player.sendMessage(Chat.translate( data.staff.isVerboseAlertable() ? "&7[&c!&7] &6Set alerts on!" : "&7[&c!&7] &6Set alerts off!"));
+                        player.sendMessage(Chat.translate( data.    staff.isVerboseAlertable() ? "&7[&c!&7] &6Set alerts on!" : "&7[&c!&7] &6Set alerts off!"));
                         return true;
                     }
 
@@ -97,6 +97,32 @@ public class ShitCommand implements CommandExecutor {
                                 }
                                 return true;
                             }
+                            case "all": {
+                                List<Long> gcd = data.getPreviousGCDS();
+                                String[] gcdpayload = new String[gcd.size()];
+                                for (int i = 0; i < gcd.size(); i++){
+                                    gcdpayload[i] = gcd.get(i).toString();
+                                }
+
+                                List<Float> pitch = data.getPitchChangePrevious();
+                                String[] pitchpayload = new String[pitch.size()];
+                                for (int i = 0; i < pitch.size(); i++){
+                                    pitchpayload[i] = pitch.get(i).toString();
+                                }
+
+                                List<Float> yaw = data.getYawChangePrevious();
+                                String[] yawpayload = new String[yaw.size()];
+                                for (int i = 0; i < yaw.size(); i++){
+                                    yawpayload[i] = yaw.get(i).toString();
+                                }
+                                try {
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted GCD hastebin at: " + Hastebin.paste(gcdpayload, "")));
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted PITCH hastebin at: " + Hastebin.paste(pitchpayload, "")));
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted YAW hastebin at: " + Hastebin.paste(yawpayload, "")));
+                                } catch (Exception e){
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
+                                }
+                            }
                             default: {
                                 return returnInfo(player);
                             }
@@ -118,6 +144,15 @@ public class ShitCommand implements CommandExecutor {
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Difference logs"));
                                 data.getYawChangePrevious().clear();
                                 return true;
+                            }
+                            case "all": {
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Difference logs"));
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPitchChangePrevious().size() + " Pitch Difference logs"));
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPreviousGCDS().size() + " GCD logs"));
+                                data.getPreviousGCDS().clear();
+                                data.getPitchChangePrevious().clear();
+                                data.getYawChangePrevious().clear();
+
                             }
                             default: {
                                 return returnInfo(player);
