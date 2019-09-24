@@ -122,6 +122,7 @@ public class ShitCommand implements CommandExecutor {
                                 } catch (Exception e){
                                     player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
                                 }
+                                return true;
                             }
                             default: {
                                 return returnInfo(player);
@@ -152,7 +153,7 @@ public class ShitCommand implements CommandExecutor {
                                 data.getPreviousGCDS().clear();
                                 data.getPitchChangePrevious().clear();
                                 data.getYawChangePrevious().clear();
-
+                                return true;
                             }
                             default: {
                                 return returnInfo(player);
