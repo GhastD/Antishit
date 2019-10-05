@@ -164,12 +164,14 @@ public class ShitCommand implements CommandExecutor {
                             }
 
                             case "all": {
-                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Difference logs"));
-                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPitchChangePrevious().size() + " Pitch Difference logs"));
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Change logs"));
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPitchChangePrevious().size() + " Pitch Change logs"));
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPreviousGCDS().size() + " GCD logs"));
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPreviousYawChangeDif().size() + " Yaw Difference logs"));
                                 data.getPreviousGCDS().clear();
                                 data.getPitchChangePrevious().clear();
                                 data.getYawChangePrevious().clear();
+                                data.getPreviousYawChangeDif().clear();
                                 return true;
                             }
                             default: {
