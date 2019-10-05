@@ -14,11 +14,14 @@ public class AimDebug extends Check {
 
     private double multiplier = Math.pow(2, 24);
     private float previous;
+    private float previousPitch = 0f;
+    private float previousYaw = 0f;
 
     @Override
     public void handleRotation(PlayerData data, float yawChange, float pitchChange) {
         data.getPitchChangePrevious().add(pitchChange);
         data.getYawChangePrevious().add(yawChange);
+        data.getPreviousYawChangeDif().add(Math.abs(previousYaw - yawChange));
         long a = (long) (pitchChange * multiplier);
         long b = (long) (previous * multiplier);
 
@@ -30,7 +33,8 @@ public class AimDebug extends Check {
         }
         if (data.getYawChangePrevious().size() > 150) data.getYawChangePrevious().clear();
         if (data.getPitchChangePrevious().size() > 150) data.getPitchChangePrevious().clear();
-
+        previousPitch = pitchChange;
+        previousYaw = yawChange;
     }
 }
 

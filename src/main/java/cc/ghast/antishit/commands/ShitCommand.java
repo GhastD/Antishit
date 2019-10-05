@@ -71,7 +71,7 @@ public class ShitCommand implements CommandExecutor {
                                 }
                                 return true;
                             }
-                            case "pitchdif": {
+                            case "pitchchange": {
                                 List<Float> list = data.getPitchChangePrevious();
                                 String[] payload = new String[list.size()];
                                 for (int i = 0; i < list.size(); i++){
@@ -84,8 +84,21 @@ public class ShitCommand implements CommandExecutor {
                                 }
                                 return true;
                             }
-                            case "yawdif": {
+                            case "yawchange": {
                                 List<Float> list = data.getYawChangePrevious();
+                                String[] payload = new String[list.size()];
+                                for (int i = 0; i < list.size(); i++){
+                                    payload[i] = list.get(i).toString();
+                                }
+                                try {
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
+                                } catch (Exception e){
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
+                                }
+                                return true;
+                            }
+                            case "yawdif": {
+                                List<Float> list = data.getPreviousYawChangeDif();
                                 String[] payload = new String[list.size()];
                                 for (int i = 0; i < list.size(); i++){
                                     payload[i] = list.get(i).toString();
@@ -136,16 +149,20 @@ public class ShitCommand implements CommandExecutor {
                                 data.getPreviousGCDS().clear();
                                 return true;
                             }
-                            case "pitchdif": {
+                            case "pitchchange": {
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPitchChangePrevious().size() + " Pitch Difference logs"));
                                 data.getPitchChangePrevious().clear();
                                 return true;
                             }
-                            case "yawdif": {
+                            case "yawchange": {
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Difference logs"));
                                 data.getYawChangePrevious().clear();
                                 return true;
                             }
+                            case "yawdif": {
+
+                            }
+
                             case "all": {
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Difference logs"));
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPitchChangePrevious().size() + " Pitch Difference logs"));

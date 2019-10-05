@@ -21,6 +21,7 @@ public class PlayerData {
     @Getter @Setter private List<Float> pitchChangePrevious = new ArrayList<>();
     @Getter @Setter private long previousGCD;
     @Getter @Setter private List<Long> previousGCDS = new ArrayList<>();
+    @Getter @Setter private List<Float> previousYawChangeDif = new ArrayList<>();
     @Getter @Setter private boolean debugAim;
 
     public PlayerData(Player player){
