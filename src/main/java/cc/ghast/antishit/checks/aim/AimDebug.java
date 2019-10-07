@@ -26,6 +26,9 @@ public class AimDebug extends Check {
         long b = (long) (previous * multiplier);
 
         long gcd = MathUtil.gcd(0x4000, a, b);
+        long rawGcd = MathUtil.gcd((int) pitchChange, (int) previousPitch);
+        data.getPreviousRawGCDS().add(rawGcd);
+        data.setPreviousRawGCD(rawGcd);
         data.setPreviousGCD(gcd);
         data.getPreviousGCDS().add(gcd);
         if (data.isDebugAim()){

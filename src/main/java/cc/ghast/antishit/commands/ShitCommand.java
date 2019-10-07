@@ -109,6 +109,18 @@ public class ShitCommand implements CommandExecutor {
                                     player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
                                 }
                                 return true;
+                            }case "rawgcd": {
+                                List<Long> list = data.getPreviousRawGCDS();
+                                String[] payload = new String[list.size()];
+                                for (int i = 0; i < list.size(); i++){
+                                    payload[i] = list.get(i).toString();
+                                }
+                                try {
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Pasted hastebin at: " + Hastebin.paste(payload, "")));
+                                } catch (Exception e){
+                                    player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
+                                }
+                                return true;
                             }
                             case "all": {
                                 List<Long> gcd = data.getPreviousGCDS();
@@ -160,18 +172,26 @@ public class ShitCommand implements CommandExecutor {
                                 return true;
                             }
                             case "yawdif": {
-
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Difference logs"));
+                                data.getPreviousYawChangeDif().clear();
+                                return true;
                             }
-
+                            case "rawgcd": {
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Raw GCD logs"));
+                                data.getPreviousYawChangeDif().clear();
+                                return true;
+                            }
                             case "all": {
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Yaw Change logs"));
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPitchChangePrevious().size() + " Pitch Change logs"));
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPreviousGCDS().size() + " GCD logs"));
                                 player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getPreviousYawChangeDif().size() + " Yaw Difference logs"));
+                                player.sendMessage(Chat.translate("&7[&c!&7] &aSuccessfully &6cleared " + data.getYawChangePrevious().size() + " Raw GCD logs"));
                                 data.getPreviousGCDS().clear();
                                 data.getPitchChangePrevious().clear();
                                 data.getYawChangePrevious().clear();
                                 data.getPreviousYawChangeDif().clear();
+                                data.getPreviousRawGCDS().clear();
                                 return true;
                             }
                             default: {
