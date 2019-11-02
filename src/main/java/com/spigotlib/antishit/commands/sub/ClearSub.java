@@ -18,8 +18,8 @@ import java.io.IOException;
  * Ghast CC © 2019
  */
 
-@SubCommand(name = "paste", permission = "shit.paste", aliases = "")
-public class PasteSub extends AbstractSubCommand {
+@SubCommand(name = "clear", permission = "shit.clear", aliases = "")
+public class ClearSub extends AbstractSubCommand {
 
     @Override
     public void run(CommandSender executor, String... args) {
@@ -37,13 +37,8 @@ public class PasteSub extends AbstractSubCommand {
                     player.sendMessage(Chat.translate("&4Invalid check! Make sure it is a valid criteria"));
                     return;
                 }
-                try {
-                    String[] array = target.arrayReturnString();
-                    player.sendMessage(Chat.translate("&aSuccess! &7-> " + Hastebin.paste(array)));
-                } catch (IOException | NullPointerException e){
-                    player.sendMessage(Chat.translate("&c[!] Error when uploading the hastebin!"));
-                }
-
+                player.sendMessage(Chat.translate("&aSuccess! &7-> &e" + target.getLog().size() + " &a removed!"));
+                target.getLog().clear();
             }
         }
     }

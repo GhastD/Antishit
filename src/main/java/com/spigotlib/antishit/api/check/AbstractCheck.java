@@ -38,4 +38,15 @@ public class AbstractCheck {
         }
         return returnValue;
     }
+
+    public String[] arrayReturnString(){
+        if (log.size() > 0){
+            String[] returnValue = new String[log.size()];
+            for (int i = 0; i < log.size(); i++){
+                returnValue[i] = log.get(i).toString();
+            }
+            return returnValue;
+        }
+        return null;
+    }
 }
