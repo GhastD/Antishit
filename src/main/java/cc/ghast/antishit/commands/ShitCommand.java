@@ -109,7 +109,8 @@ public class ShitCommand implements CommandExecutor {
                                     player.sendMessage(Chat.translate("&7[&c!&7] &6Error when pasting to Hastebin. Check console"));
                                 }
                                 return true;
-                            }case "rawgcd": {
+                            }
+                            case "rawgcd": {
                                 List<Long> list = data.getPreviousRawGCDS();
                                 String[] payload = new String[list.size()];
                                 for (int i = 0; i < list.size(); i++){

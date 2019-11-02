@@ -2,10 +2,142 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="369226d1-ff4d-4948-bb36-5fea3c564af4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/Antishit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/AntishitPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/AbstractCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/Check.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/CheckManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/AbstractCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/AbstractSubCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/CommandListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/SubCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/coefficient/TrueYawPitchCoef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/coefficient/YawPitchCoef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/ClickGCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/PGCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/PMagic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YGCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YLCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YMagic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/delta/PitchDelta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/delta/YawDelta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/MainCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/sub/PasteSub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/PlayerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/Verbose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/Violation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/managers/CommandManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/managers/PlayerDataManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/PacketUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/TinyProtocolHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/event/PacketReceiveEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/event/PacketSendEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/NMSObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/Packet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/ProtocolVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/ChannelInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/ProtocolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/handler/ChannelHandler1_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/handler/ChannelHandler1_8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/handler/ChannelHandlerAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/ConstructorInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/FieldAccessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/MethodInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/Reflection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/Reflections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/ReflectionsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/WrappedClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/WrappedConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/WrappedField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/packets/reflection/WrappedMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/listeners/PacketListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/handshake/WrappedHandshakeClientProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedIn13KeepAlive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInAbilitiesPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInArmAnimationPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInBlockDigPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInBlockPlacePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInChatPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInClientCommandPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInCloseWindowPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInCustomPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInEntityActionPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInFlyingPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInHeldItemSlotPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInKeepAlivePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInSteerVehiclePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInTabComplete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInTransactionPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInUseEntityPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInVelocityPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/in/WrappedInWindowClickPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutAbilitiesPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutBlockChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutEntityMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutHeldItemSlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutKeepAlivePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutOpenWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutPayloadPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutPlayerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutPositionPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutRelativePosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutSpawnPositionPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutTabComplete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/out/WrappedOutVelocityPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/BaseBlockPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/EnumDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/MathHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/Vec3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedEnumGameMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedEnumParticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedEnumPlayerInfoAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedGameProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedPlayerInfoData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedWatchableObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/MathUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/chat/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/chat/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/configuration/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/entity/MovingStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/entity/PlayerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/AbstractMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/ItemBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/JsonObjectBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/MaterialUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/listener/ButtonListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/pagination/PaginatedMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/hastebin/Hastebin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/http/HTTPRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/location/BlockUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/location/Materials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/location/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/location/Rotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/location/Velocity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/CompatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/ReflectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/TimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/TimerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/ClickableItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/InventoryListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/InventoryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/SmartInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/SmartInvsAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/InventoryContents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/InventoryProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/Pagination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/SlotIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/SlotPos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/ChestInventoryOpener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/InventoryOpener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/SpecialInventoryOpener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/PacketAdapterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/PacketAdapterListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/PlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/PlayerData.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,83 +152,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="126" column="40" lean-forward="true" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/Hastebin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/http/HTTPRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/CheckCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/Check.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/CheckManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/PlayerData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,13 +165,97 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/AbstractCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            <state relative-caret-position="153">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/CommandListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/Command.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/SubCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/API.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/managers/CommandManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/MainCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/sub/PasteSub.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/AbstractSubCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -122,6 +266,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -133,12 +278,18 @@
       <find>&amp;a</find>
       <find>meme</find>
       <find>HttpRequest</find>
+      <find>import cc.ghast.artemis.v2.api</find>
+      <find>import cc.ghast.artemis.v2.</find>
+      <find>ConfigManager.getSettings().getString(&quot;message.no-permission&quot;)</find>
     </findStrings>
     <replaceStrings>
       <replace>antishit</replace>
       <replace>&amp;6</replace>
       <replace>shit</replace>
       <replace>HTTPRequest</replace>
+      <replace>import com.spigotlib.antishit</replace>
+      <replace>import com.spigotlib.antishit.</replace>
+      <replace>&quot;&amp;4No permission!&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -147,44 +298,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/manager/Manager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/CheckType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/CheckCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/Check.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/categories/AimCheck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/categories/AimCheck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Timer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketUseEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/PlayerDataManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/ProtocolManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/location/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/PacketAdapterListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/metrics/Metrics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/API.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/Violation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/Verbose.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/EventAdapterListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/ConfigManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketPositionLook.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/Antishit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketPosition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/configuration/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/gui/GUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/gui/ItemBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CommandManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/chat/Chat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CheckManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/Check.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/HttpRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/HTTPRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/Hastebin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/PlayerData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedEnumParticle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedEnumGameMode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedGameProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedPlayerInfoData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/packet/types/WrappedWatchableObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/utils/chat/Chat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/chat/Chat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/listener/ButtonListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/boundingbox/BoundingBox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/configuration/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/entity/PlayerUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/pagination/PaginatedMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/Button.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/gui/ItemBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/hastebin/Hastebin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/location/Position.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/BoundingUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/TimeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/InventoryContents.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/Pagination.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/SlotIterator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/ChestInventoryOpener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/InventoryOpener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/SpecialInventoryOpener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/InventoryManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/SmartInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/SmartInvsAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/PacketUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/TinyProtocolHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/listeners/EventAdapterListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/Violation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/managers/PlayerDataManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/API.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/AbstractCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/PlayerData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/listeners/PacketListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/NMSObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/LCD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/GCD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YGCD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YGCDMagic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YMagic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/PGCD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/PMagic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/ClickGCD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/CheckManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/AbstractSubCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/CommandListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/managers/CommandManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/MainCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/sub/PasteSub.java" />
       </list>
     </option>
   </component>
@@ -216,17 +380,21 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
-    <option name="width" value="1935" />
-    <option name="height" value="1034" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="87" />
+    <option name="y" value="81" />
+    <option name="width" value="1440" />
+    <option name="height" value="780" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,7 +435,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
@@ -277,7 +444,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="antishit" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="checks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
@@ -287,7 +453,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="antishit" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="check" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
@@ -297,36 +463,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="antishit" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="packet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="checks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="checks" type="462c0819:PsiDirectoryNode" />
-              <item name="aim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="checks" type="462c0819:PsiDirectoryNode" />
-              <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
@@ -362,37 +499,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="hastebin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antishit" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="location" type="462c0819:PsiDirectoryNode" />
+              <item name="packet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Antishit" type="b2602c69:ProjectViewProjectNode" />
@@ -405,31 +512,34 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sanja\IdeaProjects\Antishit\lib" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cc.ghast.antishit.api.checks" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sanja\IdeaProjects\Antishit\src\main\java\com\spigotlib\antishit\api" />
+      <recent name="C:\Users\sanja\IdeaProjects\Antishit\src\main\java\com\spigotlib\antishit" />
+      <recent name="C:\Users\sanja\IdeaProjects\Antishit\src\main\java\com\spigotlib\antishit\packet\tinyprotocol" />
       <recent name="C:\Users\sanja\IdeaProjects\Antishit\src\main\resources" />
       <recent name="C:\Users\sanja\IdeaProjects\Antishit\src\main\java\cc\ghast\antishit\data" />
-      <recent name="C:\Users\sanja\IdeaProjects\Antishit\src\main\java\cc\ghast\antishit" />
-      <recent name="C:\Users\sanja\IdeaProjects\Antishit\src\main\java\cc\ghast\antishit\api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spigotlib.antishit.managers" />
+      <recent name="com.spigotlib.antishit.checks.common" />
+      <recent name="com.spigotlib.antishit.api.check" />
       <recent name="cc.ghast.antishit.metrics" />
       <recent name="cc.ghast.antishit.utils" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="cc.ghast.antishit.api.checks" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sanja\IdeaProjects\Antishit\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -458,10 +568,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="0" width="1935" height="1034" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26826668" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27665246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -485,182 +595,280 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.101333335" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.10127932" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/CheckType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/CompatUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/d.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Position.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Chat.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/CraftServer188R01.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/NPC188R01.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/CustomLocation.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/StringUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/nms/nms.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/RayTrace.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/Timer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketBlockDig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketUseEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/MathUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/chat/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/ProtocolManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/ReflectionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/TimerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/misc/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/InventoryContents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/Violation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/InventoryProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/Verbose.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/Pagination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="-27">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/location/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/SlotIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/content/SlotPos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/ChestInventoryOpener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/InventoryOpener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/opener/SpecialInventoryOpener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/ClickableItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketPositionLook.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/InventoryListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/metrics/Metrics.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/InventoryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="24">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aura/AuraDebug.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/SmartInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/smartinvs/SmartInvsAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/MathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/PacketUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/listeners/EventAdapterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/TinyProtocolHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/PlayerData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/Violation.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/Verbose.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/AbstractCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/manager/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/EventAdapterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/events/PacketPosition.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/managers/PlayerDataManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/configuration/Configuration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/data/PlayerData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="202">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/gui/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/listeners/PacketListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="59" column="73" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
+        <state relative-caret-position="306">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/gui/ItemBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/packet/tinyprotocol/api/NMSObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="-782">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/c.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/packet/PacketAdapterListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/coefficient/YawPitchCoef.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/delta/YawDelta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/coefficient/TrueYawPitchCoef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/delta/PitchDelta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YLCD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/Antishit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/utils/location/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -670,142 +878,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/API.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YMagic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/YGCD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/PMagic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="44" />
+          <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/chat/Chat.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/PGCD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="110">
+          <caret line="14" selection-start-line="14" selection-end-line="52" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/CheckManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/checks/common/ClickGCD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="629">
+          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Optifine SRC Version [1.8.8 HD U H8]/optifine/RenderEnv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1915" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/PlayerDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/managers/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/settings.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/hastebin/Hastebin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/utils/http/HTTPRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/CheckCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/api/checks/Check.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/check/CheckManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/DripAim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/Getter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/AbstractCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/data/PlayerData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/AbstractSubCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        <state relative-caret-position="187">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/CommandListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/checks/aim/AimDebug.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/command/SubCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/api/API.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/ghast/antishit/commands/ShitCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/managers/CommandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="126" column="40" lean-forward="true" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+        <state relative-caret-position="323">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/MainCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spigotlib/antishit/commands/sub/PasteSub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

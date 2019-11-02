@@ -24,7 +24,8 @@ public class PacketAdapterListener extends PacketAdapter {
                 PacketType.Play.Client.USE_ENTITY,
                 PacketType.Play.Client.ARM_ANIMATION,
                 PacketType.Play.Client.BLOCK_DIG,
-                PacketType.Play.Client.FLYING
+                PacketType.Play.Client.FLYING,
+                PacketType.Play.Client.ENTITY_ACTION
         );
     }
 
