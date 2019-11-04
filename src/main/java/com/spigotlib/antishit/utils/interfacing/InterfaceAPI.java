@@ -1,14 +1,14 @@
-package com.spigotlib.antishit.utils.smartinvs;
+package com.spigotlib.antishit.utils.interfacing;
 
 
 import com.spigotlib.antishit.Antishit;
 
-public class SmartInvsAPI {
+public class InterfaceAPI {
 
-    private static SmartInvsAPI instance;
+    private static InterfaceAPI instance;
     private static InventoryManager invManager;
 
-    public SmartInvsAPI(){init();}
+    public InterfaceAPI(){init();}
 
     public void init() {
         instance = this;
@@ -22,6 +22,6 @@ public class SmartInvsAPI {
     }
 
     public static InventoryManager manager() { return invManager; }
-    public static SmartInvsAPI instance() { return instance; }
+    public static InterfaceAPI instance() { return instance; }
 
 }

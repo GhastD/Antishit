@@ -1,4 +1,4 @@
-package com.spigotlib.antishit.utils.smartinvs.content;
+package com.spigotlib.antishit.utils.interfacing.content;
 
 import org.bukkit.entity.Player;
 

@@ -1,6 +1,7 @@
 package com.spigotlib.antishit.api;
 
 import com.spigotlib.antishit.Antishit;
+import com.spigotlib.antishit.managers.CommandManager;
 import com.spigotlib.antishit.managers.PlayerDataManager;
 import com.spigotlib.antishit.packet.TinyProtocolHandler;
 import lombok.Getter;
@@ -17,5 +18,6 @@ public class API {
     public API(){
         this.playerDataManager = new PlayerDataManager();
         this.tinyProtocolHandler = new TinyProtocolHandler(Antishit.INSTANCE.getPlugin());
+        new CommandManager();
     }
 }

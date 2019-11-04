@@ -11,7 +11,7 @@ public class Hastebin {
 
     private static final String endpoint = "https://hasteb.in/documents";
 
-    public static String paste(final String[] s) throws IOException {
+    public static String paste(String[] s) throws IOException {
         String payload = "";
         for (String string : s){
             payload = payload + "\n" + string;

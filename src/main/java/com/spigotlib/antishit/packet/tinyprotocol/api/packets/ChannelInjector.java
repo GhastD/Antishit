@@ -22,6 +22,7 @@ public class ChannelInjector implements Listener {
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void onJoin(PlayerJoinEvent event) {
+        System.out.println("Injecting channel to user " + event.getPlayer().getName());
         this.channel.addChannel(event.getPlayer());
     }
 

@@ -18,12 +18,27 @@ public class MathUtil {
     private static Random rand = new Random();
     private static DecimalFormat decimalFormat = new DecimalFormat("0.000");
 
+    // method to return LCM of two numbers
+    public static long lcm(long a, long b)
+    {
+        return (a*b)/gcd(a, b);
+    }
+
     public static long gcd(long limit, long a, long b) {
         return (b <= limit) ? a : gcd(limit, b, a % b);
     }
 
-    public static int gcd(int a, int b) {
+    public static int gcd(long a, long b) {
         return BigInteger.valueOf(a).gcd(BigInteger.valueOf(b)).intValue();
+    }
+
+    public static long findGCD(double arr[], int n)
+    {
+        double result = arr[0];
+        for (int i = 1; i < n; i++)
+            result = gcd((long)arr[i], (long)result);
+
+        return (long) result;
     }
 
     public static boolean getRandomBoolean() {

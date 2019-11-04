@@ -42,6 +42,13 @@
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/server.jar</systemPath>
+        </dependency>
         <!--
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -51,11 +58,6 @@
         </dependency>
         -->
         <!-- https://mvnrepository.com/artifact/org.tensorflow/tensorflow -->
-        <dependency>
-            <groupId>org.tensorflow</groupId>
-            <artifactId>tensorflow</artifactId>
-            <version>1.14.0</version>
-        </dependency>
         <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>

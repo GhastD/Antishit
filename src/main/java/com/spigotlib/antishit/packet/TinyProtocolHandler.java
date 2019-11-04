@@ -23,8 +23,8 @@ public class TinyProtocolHandler {
 
     public synchronized void init(JavaPlugin javaPlugin){
         plugin = javaPlugin;
-        instance = new ChannelInjector();
         packetListener = new PacketListener();
+        instance = new ChannelInjector();
         Bukkit.getPluginManager().registerEvents(instance, javaPlugin);
     }
 
@@ -50,7 +50,7 @@ public class TinyProtocolHandler {
 
 
         PacketSendEvent event = new PacketSendEvent(sender, packet, packetName);
-        if (!event.isCancelled()) Antishit.INSTANCE.getApi().getTinyProtocolHandler().getPacketListener().onSend(event);
+        Antishit.INSTANCE.getApi().getTinyProtocolHandler().getPacketListener().onSend(event);
         Bukkit.getPluginManager().callEvent(event);
 
         return !event.isCancelled() ? event.getPacket() : null;

@@ -13,7 +13,7 @@ import com.spigotlib.antishit.utils.location.Position;
  * @since 02-Nov-19
  * Ghast CC © 2019
  */
-@Check(name = "ClickGCD", id="click::gcd")
+@Check(name = "ClickGCD", id="click::gcd", max = 500)
 public class ClickGCD extends AbstractCheck {
 
     private long last;
@@ -24,7 +24,7 @@ public class ClickGCD extends AbstractCheck {
         if (packet instanceof WrappedInArmAnimationPacket){
             long current = System.currentTimeMillis();
             if (last != 0){
-                long gcd = gcd(current, last);
+                long gcd = gcd((long)(current * multiplier), (long) (last*multiplier));
                 log(gcd);
             }
             last = current;

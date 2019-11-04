@@ -1,4 +1,4 @@
-package com.spigotlib.antishit.utils.smartinvs;
+package com.spigotlib.antishit.utils.interfacing;
 
 import java.util.function.Consumer;
 

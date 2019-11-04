@@ -17,14 +17,15 @@ import java.util.List;
 @Getter
 public class AbstractCheck {
 
-    private String name = this.getClass().getAnnotation(Check.class).name();
-    private String id = this.getClass().getAnnotation(Check.class).id();
-
-    private List<Double> log = new ArrayList<>();
+    private final String name = this.getClass().getAnnotation(Check.class).name();
+    private final String id = this.getClass().getAnnotation(Check.class).id();
+    private final int max = this.getClass().getAnnotation(Check.class).max();
+    private final List<Double> log = new ArrayList<>();
 
     public void handle(PlayerData data, NMSObject payload){ }
 
     public void log(double value){
+        if (log.size() > max) log.clear();
         log.add(value);
         Bukkit.getOnlinePlayers().forEach(player -> {
 

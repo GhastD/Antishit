@@ -1,9 +1,9 @@
-package com.spigotlib.antishit.utils.smartinvs;
+package com.spigotlib.antishit.utils.interfacing;
 
-import com.spigotlib.antishit.utils.smartinvs.content.InventoryContents;
-import com.spigotlib.antishit.utils.smartinvs.opener.ChestInventoryOpener;
-import com.spigotlib.antishit.utils.smartinvs.opener.InventoryOpener;
-import com.spigotlib.antishit.utils.smartinvs.opener.SpecialInventoryOpener;
+import com.spigotlib.antishit.utils.interfacing.content.InventoryContents;
+import com.spigotlib.antishit.utils.interfacing.opener.ChestInventoryOpener;
+import com.spigotlib.antishit.utils.interfacing.opener.InventoryOpener;
+import com.spigotlib.antishit.utils.interfacing.opener.SpecialInventoryOpener;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

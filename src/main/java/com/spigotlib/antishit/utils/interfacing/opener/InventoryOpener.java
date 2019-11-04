@@ -1,8 +1,8 @@
-package com.spigotlib.antishit.utils.smartinvs.opener;
+package com.spigotlib.antishit.utils.interfacing.opener;
 
-import com.spigotlib.antishit.utils.smartinvs.ClickableItem;
-import com.spigotlib.antishit.utils.smartinvs.SmartInventory;
-import com.spigotlib.antishit.utils.smartinvs.content.InventoryContents;
+import com.spigotlib.antishit.utils.interfacing.ClickableItem;
+import com.spigotlib.antishit.utils.interfacing.SmartInventory;
+import com.spigotlib.antishit.utils.interfacing.content.InventoryContents;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;

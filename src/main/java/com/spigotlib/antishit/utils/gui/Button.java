@@ -1,6 +1,5 @@
 package com.spigotlib.antishit.utils.gui;
 
-import com.sun.istack.internal.Nullable;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemStack;
@@ -17,7 +16,7 @@ public abstract class Button {
         buttons = new HashSet<>();
     }
 
-    public Button(@Nullable AbstractMenu menu) {
+    public Button(AbstractMenu menu) {
         this.menu = menu;
 
         buttons.add(this);

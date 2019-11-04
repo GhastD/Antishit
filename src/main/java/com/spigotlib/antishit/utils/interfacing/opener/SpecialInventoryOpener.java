@@ -1,7 +1,7 @@
-package com.spigotlib.antishit.utils.smartinvs.opener;
+package com.spigotlib.antishit.utils.interfacing.opener;
 
-import com.spigotlib.antishit.utils.smartinvs.InventoryManager;
-import com.spigotlib.antishit.utils.smartinvs.SmartInventory;
+import com.spigotlib.antishit.utils.interfacing.InventoryManager;
+import com.spigotlib.antishit.utils.interfacing.SmartInventory;
 import com.google.common.collect.ImmutableList;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

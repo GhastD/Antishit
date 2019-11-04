@@ -1,8 +1,8 @@
-package com.spigotlib.antishit.utils.smartinvs;
+package com.spigotlib.antishit.utils.interfacing;
 
-import com.spigotlib.antishit.utils.smartinvs.content.InventoryContents;
-import com.spigotlib.antishit.utils.smartinvs.content.InventoryProvider;
-import com.spigotlib.antishit.utils.smartinvs.opener.InventoryOpener;
+import com.spigotlib.antishit.utils.interfacing.content.InventoryContents;
+import com.spigotlib.antishit.utils.interfacing.content.InventoryProvider;
+import com.spigotlib.antishit.utils.interfacing.opener.InventoryOpener;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.inventory.InventoryCloseEvent;
@@ -157,7 +157,7 @@ public class SmartInventory {
             if(this.provider == null)
                 throw new IllegalStateException("The provider of the SmartInventory.Builder must be set.");
 
-            InventoryManager manager = this.manager != null ? this.manager : SmartInvsAPI.manager();
+            InventoryManager manager = this.manager != null ? this.manager : InterfaceAPI.manager();
 
             if(manager == null)
                 throw new IllegalStateException("The managers of the SmartInventory.Builder must be set, "

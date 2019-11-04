@@ -1,6 +1,6 @@
-package com.spigotlib.antishit.utils.smartinvs.content;
+package com.spigotlib.antishit.utils.interfacing.content;
 
-import com.spigotlib.antishit.utils.smartinvs.ClickableItem;
+import com.spigotlib.antishit.utils.interfacing.ClickableItem;
 
 import java.util.Arrays;
 

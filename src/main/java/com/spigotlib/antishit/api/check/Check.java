@@ -16,4 +16,5 @@ import java.lang.annotation.Target;
 public @interface Check {
     String name();
     String id();
+    int max() default 100;
 }

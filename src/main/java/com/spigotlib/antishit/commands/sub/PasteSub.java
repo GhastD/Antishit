@@ -39,9 +39,14 @@ public class PasteSub extends AbstractSubCommand {
                 }
                 try {
                     String[] array = target.arrayReturnString();
+                    if (array == null){
+                        player.sendMessage(Chat.translate("&c[!] Error : Log is empty!"));
+                        return;
+                    }
                     player.sendMessage(Chat.translate("&aSuccess! &7-> " + Hastebin.paste(array)));
                 } catch (IOException | NullPointerException e){
                     player.sendMessage(Chat.translate("&c[!] Error when uploading the hastebin!"));
+                    e.printStackTrace();
                 }
 
             }

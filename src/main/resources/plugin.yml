@@ -1,4 +1,4 @@
-main: cc.ghast.antishit.Antishit
+main: com.spigotlib.antishit.AntishitPlugin
 author: Ghast
 description: 'A little practice debugger'
 name: Antishit

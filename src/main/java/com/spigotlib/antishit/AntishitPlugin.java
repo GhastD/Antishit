@@ -8,4 +8,9 @@ import org.bukkit.plugin.java.JavaPlugin;
  * Ghast CC © 2019
  */
 public class AntishitPlugin extends JavaPlugin {
+
+    @Override
+    public void onEnable(){
+        Antishit.INSTANCE.enable(this);
+    }
 }

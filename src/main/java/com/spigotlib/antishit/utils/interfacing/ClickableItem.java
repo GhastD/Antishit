@@ -1,4 +1,4 @@
-package com.spigotlib.antishit.utils.smartinvs;
+package com.spigotlib.antishit.utils.interfacing;
 
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
